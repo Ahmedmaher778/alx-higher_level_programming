@@ -6,9 +6,9 @@
 class Square:
     """Represent a square."""
 
-    def __init__(slf, sze):
+    def __init__(slf, size):
         """Initialize a new Square.
         Args:
-            sze (int): The size of the new square.
+            size (int): The size of the new square.
         """
-        slf.__sze = size
+        slf.__size = size
