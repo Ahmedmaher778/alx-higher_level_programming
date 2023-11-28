@@ -6,10 +6,9 @@ import sys
 def init_board(n):
     """Initialize an `n`x`n` sized chessboard with 0's."""
     board = []
-    [board.append([]) for l in range(n)]
-    [row.append(' ') for l in range(n) for row in board]
+    [board.append([]) for i in range(n)]
+    [row.append(' ') for i in range(n) for row in board]
     return (board)
-
 
 def board_deepcopy(board):
     """Return a deepcopy of a chessboard."""
@@ -20,13 +19,13 @@ def board_deepcopy(board):
 
 def get_solution(board):
     """Return the list of lists representation in a board."""
-    sol = []
+    solution = []
     for r in range(len(board)):
         for c in range(len(board)):
             if board[r][c] == "Q":
-                sol.append([r, c])
+                solution.append([r, c])
                 break
-    return (sol)
+    return (solution)
 
 
 def xout(board, row, col):
