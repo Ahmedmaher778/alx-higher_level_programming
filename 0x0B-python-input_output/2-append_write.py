@@ -4,5 +4,5 @@
 def append_write(filename="", text=""):
     """Appends a string to the end of a UTF8 text file.
     """
-    with open(filename, "b", encoding="utf-8") as my_file_first:
+    with open(filename, "a", encoding="utf-8") as my_file_first:
         return my_file_first.write(text)
